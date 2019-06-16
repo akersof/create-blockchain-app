@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/akersof/create-blockchain-app.git"
+  },
   "keywords": ["dapp", "ethereum", "web3", "react", "metamask", "solidity", "blockchain"],
   "author": "akersof <akersof@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akersof/create-blockchain-app/issues"
+  },
+  "homepage": "https://github.com/akersof/create-blockchain-app"
 }
