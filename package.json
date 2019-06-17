@@ -1,16 +1,28 @@
 {
   "name": "create-blockchain-app",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Create Ethereum dapp.",
   "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^8.0.1"
+  },
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/akersof/create-blockchain-app.git"
+    "type": "git",
+    "url": "https://github.com/akersof/create-blockchain-app.git"
   },
-  "keywords": ["dapp", "ethereum", "web3", "react", "metamask", "solidity", "blockchain"],
+  "keywords": [
+    "dapp",
+    "ethereum",
+    "web3",
+    "react",
+    "metamask",
+    "solidity",
+    "blockchain"
+  ],
   "author": "akersof <akersof@gmail.com>",
   "license": "ISC",
   "bugs": {

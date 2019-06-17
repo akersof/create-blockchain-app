@@ -1,12 +1,12 @@
 {
-  "name": "NEED TO CHANGE",
+  "name": "NEEDTOCHANGE",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "ethers": "^4.0.29",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.0.1"
   },
   "scripts": {
   },
