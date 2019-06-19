@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs-extra');
+const chalk = require('chalk');
 
 //TODO: use commander:
 
@@ -8,7 +9,7 @@ const templateDir = __dirname + '/templates/dapp';
 
 if(process.argv.length !== 3) {
     //TODO: better error management
-    console.log("command line argument is wrong");
+    console.log(chalk.red("command line argument is wrong"));
     process.exit(1);
 }
 
@@ -62,7 +63,7 @@ const PACKAGE_JSON = {
 async function copyTemplate () {
     try {
         await fs.copy(templateDir, appName);
-        console.log('success!')
+        console.log(chalk.green('success!'));
     } catch (err) {
         console.error(err)
     }
@@ -84,4 +85,6 @@ async function generatePackageJson() {
     }
 }
 
-copyTemplate().then((_) => generateManifest()).then((_) => generatePackageJson());
+copyTemplate()
+    .then((_) => {generateManifest(); console.log(chalk.blue("Generating manifest"))})
+    .then((_) => {generatePackageJson(); console.log(chalk.blue("Generating package.json"))});

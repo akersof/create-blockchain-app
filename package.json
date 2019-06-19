@@ -4,6 +4,7 @@
   "description": "Create Ethereum dapp.",
   "main": "index.js",
   "dependencies": {
+    "chalk": "^2.4.2",
     "fs-extra": "^8.0.1"
   },
   "bin": "index.js",
