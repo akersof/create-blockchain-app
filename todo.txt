@@ -1,0 +1,32 @@
+Easy:
+1- add sass dependencies?
+2- add material-ui dependencies? (for meta (contract management interface), for dapp ?)
+7- in package.json start script make it works for windows, maybe npm-run-all ?
+12- transitional step: write a js script that will mimic exactly the parcel index.hml bin command
+13- I should not import react as pracel will automatically handle this? But i need to know if i am using react
+    to export hook related to contract and metamask.
+14- apprently no need to create a .babelrc file because parcel should detect we are using react, so no need to write a
+    babelrc file ? need to test it
+15- appanrelty we can put babel in package.json https://parceljs.org/javascript.html#babel
+16- add commands-exists dependency
+17- create a parcel-plugin-solidity, prepare an option for local/testnet/mainnet, and also and option for autodeploy
+    The problem will be to get our contract address in our main app.
+    Get inspiration for the Rust plugin as it follow almost the same rules as solc. (need to launch external compiler)
+18- when starting directly with a failed to compile sol file i can't get HMR back again. Apprently it is not good to start parcel with a fail to compile sol contract
+19- verifier l'état du soft si l'exec appeller dans les plugins fail.
+19- all the deployable contract should inherit from Depoyable or should be named main? we need to determine programaticcaly what contract need to be deployed
+20- need to manage function overloading because javascript can't? how? need to check how etherjs manage this
+21- need to manage Event cause they are special functions, not like method generating inside a class.
+22- penser à retirer toutes les referenes à "file:" dans les dependencies package.json
+23- create a filter function for catching deployable attribute in the ABI
+24- need to manage the require cache as we modify required module at runtime: see  https://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
+
+Hard:
+3- write sol plugin, it should export the function as raw javascript
+4- if react is enable write sol function as hooks
+5- Only manage react first and raw javascript first. Add vue and flutter support soon
+6- Create the admin page template for contract management, compilation, deployement
+8- write a deploy script for contract auto deployement.
+9- Project is in 3 phase: local (ganache, javascript vm?), testnet (goerli, ropsten), production mainnet
+10- add support for other blockchain like stellar, libra
+11- create a POC for libra transaction on testnet

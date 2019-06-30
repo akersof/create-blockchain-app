@@ -4,7 +4,7 @@ import './App.css';
 function Dapp() {
     return (
         <div className="App">
-            <p>Hello World</p>
+            <p>Hello Blockchain world!</p>
         </div>
 );
 }

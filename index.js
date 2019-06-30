@@ -39,9 +39,14 @@ const PACKAGE_JSON = {
         "ethers": "^4.0.29",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "react-router-dom": "^5.0.1"
+        "react-router-dom": "^5.0.1",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-core": "^6.26.3",
+        "parcel-bundler": "^1.12.3"
     },
     "scripts": {
+        "start": "parcel public/index.html"
     },
     "eslintConfig": {
         "extends": "react-app"
