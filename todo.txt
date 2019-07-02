@@ -20,6 +20,8 @@ Easy:
 22- penser à retirer toutes les referenes à "file:" dans les dependencies package.json
 23- create a filter function for catching deployable attribute in the ABI
 24- need to manage the require cache as we modify required module at runtime: see  https://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
+25- if outup js is empty or no need don't create an empty file
+26- check if capitalize of the first letter in contract name can mess up the export of the instance classe
 
 Hard:
 3- write sol plugin, it should export the function as raw javascript

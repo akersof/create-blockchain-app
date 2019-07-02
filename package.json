@@ -1,6 +1,6 @@
 {
   "name": "create-blockchain-app",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Create Ethereum dapp.",
   "main": "index.js",
   "dependencies": {

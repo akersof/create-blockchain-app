@@ -36,17 +36,24 @@ const PACKAGE_JSON = {
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "ethers": "^4.0.29",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "react-router-dom": "^5.0.1",
+        "babel-core": "^6.26.3",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
-        "babel-core": "^6.26.3",
-        "parcel-bundler": "^1.12.3"
+        "ethers": "^4.0.32",
+        "parcel-bundler": "^1.12.3",
+        "parcel-plugin-solidity": "^0.1.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/preset-react": "^7.0.0",
+        "babel-plugin-wildcard": "^5.0.0"
     },
     "scripts": {
-        "start": "parcel public/index.html"
+        "init": "parcel watch ./src/contracts/*.sol",
+        "start": "parcel watch ./src/contracts/*.sol & parcel src/index.html"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -74,13 +81,6 @@ async function copyTemplate () {
     }
 }
 
-async function generateManifest() {
-    try {
-        await fs.outputFile(`${appName}/public/manifest.json`, JSON.stringify(MANIFEST));
-    } catch (err) {
-        console.error(error);
-    }
-}
 
 async function generatePackageJson() {
     try {
@@ -91,5 +91,4 @@ async function generatePackageJson() {
 }
 
 copyTemplate()
-    .then((_) => {generateManifest(); console.log(chalk.blue("Generating manifest"))})
     .then((_) => {generatePackageJson(); console.log(chalk.blue("Generating package.json"))});
