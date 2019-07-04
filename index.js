@@ -53,7 +53,7 @@ const PACKAGE_JSON = {
     },
     "scripts": {
         "init": "parcel watch ./src/contracts/*.sol",
-        "start": "parcel watch ./src/contracts/*.sol & parcel src/index.html"
+        "start": "parcel watch './src/contracts/*.sol' & parcel src/index.html"
     },
     "eslintConfig": {
         "extends": "react-app"
