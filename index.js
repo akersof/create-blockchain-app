@@ -52,7 +52,7 @@ const PACKAGE_JSON = {
         "babel-plugin-wildcard": "^5.0.0"
     },
     "scripts": {
-        "init": "parcel watch ./src/contracts/*.sol",
+        "init": "parcel watch './src/contracts/*.sol'",
         "start": "parcel watch './src/contracts/*.sol' & parcel src/index.html"
     },
     "eslintConfig": {
