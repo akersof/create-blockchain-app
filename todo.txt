@@ -22,6 +22,7 @@ Easy:
 24- need to manage the require cache as we modify required module at runtime: see  https://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
 25- if outup js is empty or no need don't create an empty file
 26- check if capitalize of the first letter in contract name can mess up the export of the instance classe
+27- need 2 manage 2 others type of abi components, event and constructor.
 
 Hard:
 3- write sol plugin, it should export the function as raw javascript

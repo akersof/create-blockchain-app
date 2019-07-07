@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {MetaMaskProvider, DappProvider} from "./components/context";
+import './index.css'
 import Dapp from './dapp';
 
 
-ReactDOM.render(<Dapp />, document.getElementById('dapp'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+ReactDOM.render(
+    <React.Fragment>
+        <MetaMaskProvider>
+            <DappProvider>
+                <Dapp />
+            </DappProvider>
+        </MetaMaskProvider>
+    </React.Fragment>, document.getElementById('root'));

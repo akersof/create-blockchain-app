@@ -41,7 +41,7 @@ const PACKAGE_JSON = {
         "babel-preset-react": "^6.24.1",
         "ethers": "^4.0.32",
         "parcel-bundler": "^1.12.3",
-        "parcel-plugin-solidity": "^0.1.1",
+        "parcel-plugin-solidity": "^0.1.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },

@@ -87,7 +87,6 @@ const dappReducer = (state, action) => {
         case 'SET_CONTRACT':
             const obj = {...state};
             obj[action.name] = action.instance;
-            console.log(obj);
             return obj;
         case 'SET_SIGNER':
             //const obj = {...state};
