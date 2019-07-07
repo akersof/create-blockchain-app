@@ -105,7 +105,7 @@ const useDapp = () => {
     useEffect(() => {
         (async () => {
             if(!metaMaskContext.isLoading) {
-                let contracts = await import('./contracts/hello.js');
+                let contracts = await import('../contracts/hello.js');
                 const keys = Object.keys(contracts);
                 for(const key of keys) {
                     const obj = {};
