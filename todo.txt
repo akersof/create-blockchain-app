@@ -33,3 +33,4 @@ Hard:
 9- Project is in 3 phase: local (ganache, javascript vm?), testnet (goerli, ropsten), production mainnet
 10- add support for other blockchain like stellar, libra
 11- create a POC for libra transaction on testnet
+28-Jira/notion.so
